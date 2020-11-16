@@ -1,0 +1,258 @@
+
+{% extends 'accounts/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1 style = "text-align: center"> Prediction Window </h1>
+<div class="p-3 mb-2 bg-secondary text-white">
+  <p>Below you will find a prediction of how your spending will occur in this next pay period. This data is created using your new check input and previous spending habits. <p>
+</div>
+
+
+
+<div class="row">
+	<div class="col-sm">
+
+
+<h2>Newly Created Predicition :</h2>
+<table class="table table-sm table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Category</th>
+      <th scope="col">Amount Spent</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+
+
+
+
+    <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Groceries</td>
+      <td>{{statment01.category.groceries}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Outside Food</td>
+      <td>{{statment01.category.outsideFood}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Coffe</td>
+      <td>{{statment01.category.coffee}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Gas</td>
+      <td>{{statment01.category.gas}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Rent/Morgage</td>
+      <td>{{statment01.category.rentMorgage}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Housing Repairs</td>
+      <td>{{statment01.category.LivingReparis}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Medical</td>
+      <td>{{statment01.category.medical}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>School Fees</td>
+      <td>{{statment01.category.schoolFees}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Electronic Purchases</td>
+      <td>{{statment01.category.shoppingElectronics}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Clothing Purchases</td>
+      <td>{{statment01.category.shoppingFashion}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Kitchen Equipment</td>
+      <td>{{statment01.category.kitchenEquipment}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Legal Payments</td>
+      <td>{{statment01.category.legalPayments}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Child Care</td>
+      <td>{{statment01.category.childCare}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Enjoyment</td>
+      <td>{{statment01.category.enjoyment}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Credit Card Bill</td>
+      <td>{{statment01.category.creditCard}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Pets</td>
+      <td>{{statment01.category.petFees}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Self Care</td>
+      <td>{{statment01.category.selfCareselfDevlopment}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Gym</td>
+      <td>{{statment01.category.gym}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="col">
+
+<h2>Previous Prediction :</h2>
+<table class="table table-sm table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Category</th>
+      <th scope="col">Amount Spent</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+
+
+
+
+    <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Groceries</td>
+      <td>{{statment01.category.groceries}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Outside Food</td>
+      <td>{{statment01.category.outsideFood}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Coffe</td>
+      <td>{{statment01.category.coffee}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Gas</td>
+      <td>{{statment01.category.gas}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Rent/Morgage</td>
+      <td>{{statment01.category.rentMorgage}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Housing Repairs</td>
+      <td>{{statment01.category.LivingReparis}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Medical</td>
+      <td>{{statment01.category.medical}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>School Fees</td>
+      <td>{{statment01.category.schoolFees}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Electronic Purchases</td>
+      <td>{{statment01.category.shoppingElectronics}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Clothing Purchases</td>
+      <td>{{statment01.category.shoppingFashion}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Kitchen Equipment</td>
+      <td>{{statment01.category.kitchenEquipment}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Legal Payments</td>
+      <td>{{statment01.category.legalPayments}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Child Care</td>
+      <td>{{statment01.category.childCare}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Enjoyment</td>
+      <td>{{statment01.category.enjoyment}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Credit Card Bill</td>
+      <td>{{statment01.category.creditCard}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Pets</td>
+      <td>{{statment01.category.petFees}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Self Care</td>
+      <td>{{statment01.category.selfCareselfDevlopment}}</td>
+    </tr>
+        <tr>
+      <th scope="row">{{statment01.dateInput}}</th>
+      <td>Gym</td>
+      <td>{{statment01.category.gym}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+
+<form>
+	<div class = "form-row">
+		<div class = "col-2">
+			<button type = "button" class = "btn btn-success"><a href="{% url 'updateStatement' statment01.id%}" class="text-white bg dark">Edit Statement</a></button>
+      </div>
+	</div>
+
+</form>
+
+
+<div>
+	<h2>Put a window here that explains the two statemtns and advises the user on what to do </h2>
+
+</div>
+
+{% endblock %}

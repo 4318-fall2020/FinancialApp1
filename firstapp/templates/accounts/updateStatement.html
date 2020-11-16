@@ -1,0 +1,179 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+
+
+{% block content %}
+
+	<h1>Lets Begin The Process</h1>
+	<p1>Below you will see a series of categories. Each category is used to store and amount you spent in your pay period for that specific reason. 
+	We will use the amount you spent to calculate a plan for you to manage your spending until the next pay period. Please enter the proper information below</p1>
+
+	<div class="row">
+	<div class="col-md-9">
+
+
+<h2>Enter Information Below:</h2>
+<table class="table table-sm table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Category</th>
+      <th scope="col">Money Spent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Groceries</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+      <td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Outside Food</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Coffee</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Gas</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Rent/Morgage</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Living Repairs</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Medical</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">School Fees</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Electronic Shopping</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Clothes Shopping</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Kitchen Equipment</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Legal Payments</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Child Care</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Enjoyment</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Credit Card Bill</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Pet Fees</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Self Care/ Self Development</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+
+
+      </td>
+    </tr>
+        <tr>
+      <th scope="row">Gym</th>
+      <td><input type = "number" class = "form control" placeholder="Amount Spent"></td>
+ 
+
+
+      </td>
+
+  </tbody>
+</table>
+</div>
+
+<div class="col-md-3">
+	<p>advertisment here, place picture in here</p>
+</div>
+
+</div>
+
+<div>
+	<button type = "button" class = "btn btn-success" ><a href="{% url 'customer' statment01.id%}" class="text-white bg dark">Submit</a></button>
+</div>
+
+{% endblock %}
